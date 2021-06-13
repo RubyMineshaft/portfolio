@@ -3,9 +3,9 @@ import "./navbar.scss";
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
-export default function Navbar() {
+export default function Navbar({menuActive, setMenuActive}) {
   return (
-    <div className="navbar">
+    <div className={"navbar " + (menuActive && "active")}>
       <div className="wrapper">
         <div className="left">
           <a href="#info" className="logo">mattetress</a>
@@ -19,7 +19,7 @@ export default function Navbar() {
           </div>
         </div>
         <div className="right">
-          <div className="hamburgerMenu">
+          <div className="hamburgerMenu" onClick={() => setMenuActive(!menuActive)}>
             <span className="line1"></span>
             <span className="line2"></span>
             <span className="line3"></span>
