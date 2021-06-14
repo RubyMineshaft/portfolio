@@ -1,0 +1,35 @@
+@import "../../global.scss";
+
+.portfolioCard {
+  width: 220px;
+  height: 150px;
+  border-radius: 20px;
+  border: 1px solid $C-3;
+  margin: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $C-4;
+  position: relative;
+  transition: all 0.5s ease;
+  cursor: pointer;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+
+  &:hover {
+    background-color: $C-1;
+    img {
+      opacity: 0.2;
+      z-index: 0;
+    }
+  }
+
+  h3{
+    position: absolute;
+  }
+}
