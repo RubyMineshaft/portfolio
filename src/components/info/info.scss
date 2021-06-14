@@ -1,3 +1,78 @@
+@import "../../global.scss";
+
 .info {
-  background-color: lightgreen;
+  background-color: $C-4;
+  display: flex;
+
+  .left {
+    flex: 0.5;
+    overflow: hidden;
+
+
+    .imgContainer {
+      width: 700px;
+      height: 700px;
+      border-radius: 50%;
+      background-color: $C-1;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      float: right;
+
+
+      img{
+        height: 100%;
+        position: relative;
+        bottom: 0px;
+      }
+    }
+  }
+
+  .right {
+    flex: 0.5;
+    position: relative;
+
+    .wrapper {
+      height: 100%;
+      width: 100%;
+      padding-left: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      h1 { 
+        font-size: 60px;
+        margin: 10px 0; 
+        color: $C-5;
+      }
+      h2 {
+        font-size: 35px;
+        color: $C-2;
+      }
+      h3 {
+        font-size: 30px;
+        color: $C-3;
+      }
+    }
+
+    a {
+      position: absolute;
+      bottom: 10px;
+      left: 40%;
+      text-decoration: none;
+      color: $C-2;
+
+      .down-icon {
+        font-size: 60px;
+        animation: flashArrow 4s infinite;
+      }
+
+      @keyframes flashArrow {
+        0%{opacity: 0.1;}
+        50%{opacity: 1;}
+        100%{ opacity: 0.1; }
+      }
+    }
+
+  }
 }
