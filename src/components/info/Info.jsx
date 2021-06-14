@@ -11,7 +11,9 @@ export default function Info() {
     init(titleRef.current, {
       showCursor: true,
       backDelay: 1500,
+      startDelay: 1000,
       backSpeed: 50,
+      loop: false,
       strings: ["Techie", "Go Player", "Coffee Drinker", "Software Engineer."]
     })
   }, [])
