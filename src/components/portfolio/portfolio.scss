@@ -1,14 +1,13 @@
 @import "../../global.scss";
 
 .portfolioContainer {
-  background-color: $C-2;
+  background-color: $C-4;
   display: flex;
   align-items: center;
   justify-content: center;
 
   .portfolio {
-    padding-top: 30px;
-    height: 80%;
+    height: 100%;
     width: 80vw;
     border-radius: 20px;
     background-color: $C-4;
@@ -32,10 +31,9 @@
       width: 70%;
       height: 70%;
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       justify-content: center;
       flex-wrap: wrap;
-      transition: all 1s ease;
     }
   }
 }
