@@ -1,30 +1,41 @@
 @import "../../global.scss";
 
-.portfolio {
-  padding-top: 30px;
-  background-color: $C-4;
+.portfolioContainer {
+  background-color: $C-2;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
 
-  h1 {
-    font-size: 50px;
-    color: $C-1;
-  }
-  ul {
-    padding: 0;
-    margin: 10px;
-    list-style: none;
+  .portfolio {
+    padding-top: 30px;
+    height: 80%;
+    width: 80vw;
+    border-radius: 20px;
+    background-color: $C-4;
     display: flex;
-  }
-  
-  .container {
-    width: 70%;
-    height: 70%;
-    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-    transition: all 1s ease;
+
+    h1 {
+      font-size: 50px;
+      color: $C-1;
+    }
+    ul {
+      padding: 0;
+      margin: 10px;
+      list-style: none;
+      display: flex;
+    }
+    
+    .container {
+      width: 70%;
+      height: 70%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      transition: all 1s ease;
+    }
   }
 }

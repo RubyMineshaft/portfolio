@@ -20,7 +20,6 @@ function App() {
         <Info/>
         <Portfolio setCurrentSlide={setCurrentSlide} />
         <Projects currentSlide={currentSlide} setCurrentSlide={setCurrentSlide} />
-        <Resume />
         <Contact />
       </div>
     </div>

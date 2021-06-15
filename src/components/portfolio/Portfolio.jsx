@@ -19,22 +19,24 @@ export default function Portfolio({setCurrentSlide}) {
 
 
   return (
-    <div className="portfolio" id="portfolio">
-      <h1>Portfolio</h1>
-      <ul>
-        {getTypes().map(type => {
-          return <PortfolioList type={type} active={selected === type} setSelected={setSelected} />
-        })}
-      </ul>
-      <div className="container">
-        {filteredProjects.map(project => (
-          <a href="#projects" onClick={(e)=> {
-              e.preventDefault();
-              window.location.href='#projects';
-              setCurrentSlide(project.id);
-              }}
-          ><PortfolioCard project={project} /> </a>
-        ))}
+    <div className="portfolioContainer">
+      <div className="portfolio" id="portfolio">
+        <h1>Portfolio</h1>
+        <ul>
+          {getTypes().map(type => {
+            return <PortfolioList type={type} active={selected === type} setSelected={setSelected} />
+          })}
+        </ul>
+        <div className="container">
+          {filteredProjects.map(project => (
+            <a href="#projects" onClick={(e)=> {
+                e.preventDefault();
+                window.location.href='#projects';
+                setCurrentSlide(project.id);
+                }}
+            ><PortfolioCard project={project} /> </a>
+          ))}
+        </div>
       </div>
     </div>
   )

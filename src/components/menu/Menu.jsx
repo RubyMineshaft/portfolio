@@ -8,7 +8,7 @@ export default function Menu({menuActive, setMenuActive}) {
       <ul>
         <MenuItem label="Home" target="#info" menuActive={menuActive} setMenuActive={setMenuActive}/>
         <MenuItem label="Portfolio" target="#portfolio" menuActive={menuActive} setMenuActive={setMenuActive}/>
-        <MenuItem label="Resume" target="#resume" menuActive={menuActive} setMenuActive={setMenuActive}/>
+        <MenuItem label="Projects" target="#projects" menuActive={menuActive} setMenuActive={setMenuActive}/>
         <MenuItem label="Contact" target="#contact" menuActive={menuActive} setMenuActive={setMenuActive}/>
       </ul>
       
