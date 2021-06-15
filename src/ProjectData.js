@@ -62,7 +62,7 @@ const data = [
     ]
   },
   {
-    id: 1,
+    id: 4,
     types: ["Java"],
     languages: ["java", "rails", "ruby", "html", "javascript"],
     title: "Scheduling System",
@@ -83,7 +83,7 @@ const data = [
     ]
   },
   {
-    id: 1,
+    id: 5,
     types: ["Java"],
     languages: ["java", "rails", "ruby", "html", "javascript"],
     title: "Scheduling System",

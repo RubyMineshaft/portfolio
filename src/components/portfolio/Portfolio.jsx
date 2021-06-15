@@ -4,7 +4,7 @@ import "./portfolio.scss";
 import PortfolioCard from './PortfolioCard';
 import {getAllProjects, getProjectType, getTypes} from "../../ProjectData";
 
-export default function Portfolio() {
+export default function Portfolio({setCurrentSlide}) {
 
   const [filteredProjects, setFilteredProjects] = useState(getAllProjects());
   const [selected, setSelected] = useState("All");
@@ -28,7 +28,12 @@ export default function Portfolio() {
       </ul>
       <div className="container">
         {filteredProjects.map(project => (
-          <PortfolioCard project={project} />
+          <a href="#projects" onClick={(e)=> {
+              e.preventDefault();
+              window.location.href='#projects';
+              setCurrentSlide(project.id);
+              }}
+          ><PortfolioCard project={project} /> </a>
         ))}
       </div>
     </div>

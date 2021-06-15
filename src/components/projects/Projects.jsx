@@ -1,13 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { getAllProjects } from '../../ProjectData';
 import Project from './Project';
 import "./projects.scss";
 import NavigateNextIcon from '@material-ui/icons/NavigateNext';
 import NavigateBeforeIcon from '@material-ui/icons/NavigateBefore';
 
-export default function Projects() {
-
-  const [currentSlide, setCurrentSlide] = useState(1);
+export default function Projects({currentSlide, setCurrentSlide}) {
 
   const handleClick = (dir) => {
     if (dir === "back") {

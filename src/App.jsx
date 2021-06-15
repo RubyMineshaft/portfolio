@@ -10,6 +10,7 @@ import Projects from "./components/projects/Projects";
 
 function App() {
   const [menuActive, setMenuActive] = useState(false);
+  const [currentSlide, setCurrentSlide] = useState(1);
 
   return (
     <div className="App">
@@ -17,8 +18,8 @@ function App() {
       <Menu menuActive={menuActive} setMenuActive={setMenuActive} />
       <div className="sections">
         <Info/>
-        <Portfolio />
-        <Projects />
+        <Portfolio setCurrentSlide={setCurrentSlide} />
+        <Projects currentSlide={currentSlide} setCurrentSlide={setCurrentSlide} />
         <Resume />
         <Contact />
       </div>
