@@ -6,6 +6,7 @@ import Contact from "./components/contact/Contact";
 import Menu from "./components/menu/Menu";
 import "./app.scss";
 import { useState } from 'react';
+import Projects from "./components/projects/Projects";
 
 function App() {
   const [menuActive, setMenuActive] = useState(false);
@@ -17,6 +18,7 @@ function App() {
       <div className="sections">
         <Info/>
         <Portfolio />
+        <Projects />
         <Resume />
         <Contact />
       </div>
