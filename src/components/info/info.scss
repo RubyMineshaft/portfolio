@@ -4,6 +4,11 @@
   background-color: $C-4;
   display: flex;
 
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .left {
     flex: 0.5;
     overflow: hidden;
@@ -18,12 +23,17 @@
       align-items: flex-end;
       justify-content: center;
       float: right;
-
+      
+      @include mobile {
+        align-items: start;
+      }
 
       img{
         height: 100%;
-        position: relative;
-        bottom: 0px;
+        
+        @include mobile {
+          height: 45%;
+        }
       }
     }
   }
@@ -31,8 +41,13 @@
   .right {
     flex: 0.5;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
     .wrapper {
+      flex: 1;
       height: 100%;
       width: 100%;
       padding-left: 50px;
@@ -40,19 +55,33 @@
       flex-direction: column;
       justify-content: center;
 
+      @include mobile {
+        padding-left: 0;
+        align-items: center;
+      }
+
       h1 { 
         font-size: 60px;
         margin: 0; 
         color: $C-1;
+        @include mobile{
+          font-size: 40px;
+        }
       }
       h2 {
         font-size: 35px;
         font-weight: 300;
         color: $C-1;
+        @include mobile {
+          font-size: 30px;
+        }
       }
       h3 {
         font-size: 30px;
         color: $C-5;
+        @include mobile {
+          font-size: 20px;
+        }
 
         .ityped-cursor {
           font-size: 2.2rem;
@@ -61,6 +90,9 @@
           -moz-animation: blink 0.3s infinite;
           animation: blink 0.3s infinite;
           animation-direction: alternate;
+          @include mobile {
+            font-size: 1.5rem;
+          }
       }
        
       @keyframes blink {
@@ -83,16 +115,81 @@
       }
     }
 
-    a {
+    .social {
+      flex: 1;
+      height: 100%;
+      width: 100%;
+      padding-left: 50px;
+      display: flex;
+      flex-direction: column;
+      // align-items: center;
+
+      @include mobile {
+        flex-direction: row;
+      }
+
+      h3 {
+        margin: 40px 0px;
+        margin-left: 75px;
+        margin-bottom: 30px;
+        font-size: 20px;
+        color: $C-1;
+        @include mobile {
+          display: none;
+        }
+
+        .chicago {
+          color: $C-5;
+          font-style: italic;
+        }
+      }
+
+      .social-link {
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        // justify-content: center;
+        color: $C-2;
+        margin-bottom: 15px;
+        margin-left: 100px;
+        text-decoration: none;
+
+        @include mobile{
+          font-size: 15px;
+          margin: 0px 20px;
+          margin-bottom: 35px;
+          justify-content: center;
+
+          span {
+            display: none;
+          }
+        }
+
+        .icon {
+          margin-right: 5px;
+          color: $C-2;
+          font-size: 35px;
+        }
+      }
+    }
+
+    #down-arrow {
       position: absolute;
       bottom: 10px;
       left: 40%;
       text-decoration: none;
       color: $C-2;
+      @include mobile {
+        margin: 0px auto;
+        bottom: 3px;
+      }
 
       .down-icon {
         font-size: 60px;
         animation: flashArrow 4s infinite;
+        @include mobile {
+          font-size: 40px;
+        }
       }
 
       @keyframes flashArrow {

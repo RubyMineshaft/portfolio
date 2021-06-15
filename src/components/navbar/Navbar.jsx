@@ -2,6 +2,7 @@ import React from 'react';
 import "./navbar.scss";
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import EmailIcon from '@material-ui/icons/Email';
 
 export default function Navbar({menuActive, setMenuActive}) {
   return (
@@ -9,14 +10,18 @@ export default function Navbar({menuActive, setMenuActive}) {
       <div className="wrapper">
         <div className="left">
           <a href="#info" className="logo">mattetress</a>
-          <div className="social">
+          <a href="https://github.com/rubymineshaft" className="social">
             <GitHubIcon className="icon" />
             <span> RubyMineshaft </span> 
-          </div> 
-          <div className="social" >
+          </a>
+          <a href="https://linkedin.com/in/mattetress" className="social" >
             <LinkedInIcon className="icon" />
             <span>mattetress</span>
-          </div>
+          </a>
+          <a href="mailto:mattetress@gmail.com" className="social">
+            <EmailIcon className="icon" />
+            <span>mattetress@gmail.com</span>
+          </a>
         </div>
         <div className="right">
           <div className="hamburgerMenu" onClick={() => setMenuActive(!menuActive)}>

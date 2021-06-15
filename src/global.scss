@@ -4,5 +4,18 @@ $C-2: #1695A3;
 $C-3: #ACF0F2;
 $C-4: #F3FFE2;
 $C-5: #EB7F00;
-// $C-1: #F3FFE2;
-// $C-4: #225378;
+
+$med-width: 1300px;
+$small-width: 1000px;
+
+@mixin medium {
+  @media (max-width: #{$med-width}) {
+    @content
+  }
+};
+
+@mixin mobile {
+  @media (max-width: #{$small-width}) {
+    @content
+  }
+};

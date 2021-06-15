@@ -12,6 +12,12 @@
     position: absolute;
     left: 0;
     transition: all 1s ease-out;
+
+    @include mobile {
+      height: 100%;
+      
+      justify-content: center;
+    }
   }
 
   .next {
@@ -20,6 +26,12 @@
     font-size: 60px;
     color: $C-5;
     cursor: pointer;
+    @include medium {
+      right: 25px;
+    }
+    @include mobile{
+      display: none;
+    }
   }
   .back {
     position: absolute;
@@ -27,5 +39,12 @@
     font-size: 60px;
     color: $C-5;
     cursor: pointer;
+
+    @include medium {
+      left: 25px;
+    }
+    @include mobile {
+      display: none;
+    }
   }
 }

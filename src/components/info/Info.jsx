@@ -2,6 +2,10 @@ import React, { useEffect, useRef } from 'react';
 import "./info.scss";
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { init } from 'ityped';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import EmailIcon from '@material-ui/icons/Email';
+
 
 export default function Info() {
 
@@ -31,7 +35,23 @@ export default function Info() {
           <h1>Matthew Etress</h1>
           <h3><span ref={titleRef}></span></h3>
         </div>
-        <a href="#portfolio">
+        <div className="social">
+            <a href="https://github.com/rubymineshaft" target="_blank" rel="noreferrer" className="social-link">
+              <GitHubIcon className="icon" />
+              <span> RubyMineshaft </span> 
+            </a>
+            <a href="https://linkedin.com/in/mattetress" className="social-link">
+              <LinkedInIcon className="icon" />
+              <span>mattetress</span>
+            </a>
+            <a href="mailto:mattetress@gmail.com" className="social-link">
+              <EmailIcon className="icon" />
+              <span>mattetress@gmail.com</span>
+            </a>
+          <h3>Seeking opportunities in <span className="chicago">Chicago, IL</span>!</h3>
+
+        </div>
+        <a href="#portfolio" id="down-arrow">
           <ExpandMoreIcon className="down-icon" />
         </a>
       </div>
