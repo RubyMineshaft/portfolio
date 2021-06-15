@@ -26,6 +26,7 @@
       
       @include mobile {
         align-items: start;
+        position: relative;
       }
 
       img{
@@ -33,6 +34,8 @@
         
         @include mobile {
           height: 45%;
+          position: absolute;
+          bottom: 45%;
         }
       }
     }

@@ -33,7 +33,7 @@ export default function Contact() {
     <div className="contact" id="contact">
       <div className="container">
         <div className="left">
-          <img src="/assets/mailbox.png" alt=""/>
+          <img src="/assets/speak.svg" alt=""/>
         </div>
         <div className="right">
           <h1 className={"" + (submitted && "submitted")}>Contact</h1>
