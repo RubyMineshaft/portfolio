@@ -48,7 +48,6 @@ export default function Info() {
               <EmailIcon className="icon" />
               <span>mattetress@gmail.com</span>
             </a>
-          <h3>Seeking opportunities in <span className="chicago">Chicago, IL</span>!</h3>
 
         </div>
         <a href="#portfolio" id="down-arrow">
