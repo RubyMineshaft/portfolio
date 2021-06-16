@@ -27,7 +27,7 @@ const data = [
     shortDesc: "JavaFX application which provides GUI for managing appointments in database.",
     fullDesc: [
       "We're definitely getting a bit recursive here; this is the site you're currently browsing!",
-      "This portfolio was written in React.  It uses EmailJS for sending the contact form and material-ui for some of the icons. It has a responsive design using Sass mixins and media queries."
+      "This portfolio was written in React.  It uses EmailJS for sending the contact form and material-ui for some of the icons. It has a responsive design using SCSS mixins and media queries."
     ],
     splashImage: "/assets/portfolio.png",
     largeImage: "/assets/portfolio.png",
