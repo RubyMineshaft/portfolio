@@ -111,7 +111,7 @@ const data = [
       "The GUI was built following mock-ups provided. This application is not connected to a database and, therefore, has no data persistence."
     ],
     splashImage: "/assets/inventory-thumb.png",
-    largeImage: "/assets/inventory-full.png",
+    largeImage: "/assets/inventory.png",
     githubURL: "https://github.com/RubyMineshaft/InventorySystem",
     demoURL: null,
     bullets: [
