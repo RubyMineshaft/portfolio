@@ -27,16 +27,16 @@ const data = [
     shortDesc: "JavaFX application which provides GUI for managing appointments in database.",
     fullDesc: [
       "We're definitely getting a bit recursive here; this is the site you're currently browsing!",
-      "This portfolio was written in React.  It uses EmailJS for sending the contact form and material-ui for some of the icons."
+      "This portfolio was written in React.  It uses EmailJS for sending the contact form and material-ui for some of the icons. It has a responsive design using Sass mixins and media queries."
     ],
     splashImage: "/assets/portfolio.png",
     largeImage: "/assets/portfolio.png",
     githubURL: "https://github.com/RubyMineshaft/portfolio",
     demoURL: "http://mattetress.com",
     bullets: [
-      "Utilizes React hooks for managing state",
+      "Utilizes React hooks for managing state.",
       "CSS animations for smoother transitions and slider functionality.",
-      "Language icons from Devicon v2.12.0.",
+      "Responsive design using media queries.",
       "iTyped.js library used for typing effect on home page."
     ]
   },
