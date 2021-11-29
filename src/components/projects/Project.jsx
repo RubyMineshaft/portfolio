@@ -49,7 +49,7 @@ export default function Project({project}) {
                     View on GitHub
                   </a>
 
-                  {demoLink()}
+                  {/* {demoLink()} */}
                   
                 </div>
               </div>
